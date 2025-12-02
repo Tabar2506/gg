@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thống kê</title>
+  <link rel="stylesheet" href="manage.css">
+</head>
+<body>
+  <header>
+    <div>Thống kê File</div>
+    <div style="display:flex; align-items:center; gap:8px;">
+      <div id="userInfo"></div>
+      <button id="goManage">Quản lý file</button>
+      <button id="logoutBtn">Đăng xuất</button>
+    </div>
+  </header>
+
+  <main class="stats-main">
+    <section class="stats-section">
+      <h2>Thống kê</h2>
+      <p>Tổng số file: <span id="fileCount">0</span></p>
+      <p>Tổng số thư mục: <span id="folderCount">0</span></p>
+    </section>
+
+    <section class="stats-section">
+      <h3>Lịch sử thao tác</h3>
+      <ul id="historyList"></ul>
+    </section>
+  </main>
+
+  <script src="stats.js"></script>
+</body>
+</html>
