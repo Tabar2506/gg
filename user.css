@@ -1,0 +1,347 @@
+/* ================= TRANG USER ================= */
+
+/* Cho card mềm hơn một chút */
+.user-container .card {
+    border-radius: 24px;
+}
+
+/* Cột trái / phải giống admin (grid đã có trong admin.css) */
+.form-card h2,
+.list-card h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Hàng trong form */
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 14px;
+}
+
+.form-row label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #5F6368;
+}
+
+.form-row input,
+.form-row textarea,
+.form-row select {
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid #DADCE0;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-row textarea {
+    resize: vertical;
+}
+
+/* Nút form */
+.form-actions {
+    margin-top: 6px;
+    display: flex;
+    gap: 10px;
+}
+
+/* Nút phụ */
+.btn-secondary {
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid #DADCE0;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-secondary:hover {
+    background: #F8F9FA;
+}
+
+/* Nút chính dùng sẵn .btn-primary trong admin.css, chỉ bo tròn hơn */
+.btn-primary {
+    border-radius: 999px;
+}
+
+/* ====== LIST BÀI VIẾT ====== */
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.list-header h2 {
+    margin-bottom: 0;
+}
+
+.list-filters {
+    display: flex;
+    gap: 10px;
+}
+
+.list-filters input,
+.list-filters select {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #DADCE0;
+    font-size: 13px;
+}
+
+/* danh sách thẻ bài viết */
+.post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+.post-item {
+    background: #fff;
+    border-radius: 18px;
+    border: 1px solid #E8EAED;
+    padding: 16px 18px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 6px;
+}
+
+.post-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.post-owner {
+    font-size: 13px;
+    color: #5F6368;
+}
+
+.post-description {
+    font-size: 14px;
+    color: #5F6368;
+    margin-bottom: 6px;
+}
+
+.post-meta {
+    font-size: 12px;
+    color: #5F6368;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.post-topic {
+    font-weight: 500;
+}
+
+.post-date {
+    font-style: italic;
+}
+
+/* trạng thái */
+.status-pill {
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+}
+
+.status-public {
+    background: #E3F2FD;
+    color: #1565C0;
+}
+
+.status-private {
+    background: #FCE4EC;
+    color: #AD1457;
+}
+
+/* footer card */
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.post-stats {
+    font-size: 13px;
+    color: #5F6368;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-heart,
+.icon-comment {
+    font-size: 14px;
+}
+
+/* nút ở footer */
+.post-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-pill {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid #DADCE0;
+    background: #fff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-pill:hover {
+    background: #E8F0FE;
+    border-color: #4285F4;
+}
+
+.btn-danger {
+    border-color: #EA4335;
+    color: #EA4335;
+}
+
+.btn-danger:hover {
+    background: #FCE8E6;
+}
+
+/* trạng thái trống */
+.empty-state {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #5F6368;
+}
+
+/* ====== MODAL ====== */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(32, 33, 36, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+}
+
+.modal-overlay.show {
+    display: flex;
+}
+
+.modal {
+    background: #fff;
+    max-width: 640px;
+    width: 100%;
+    border-radius: 24px;
+    padding: 20px 24px 18px 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.modal-header h2 {
+    font-size: 18px;
+}
+
+.modal-close {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-meta {
+    font-size: 13px;
+    color: #5F6368;
+    margin-bottom: 10px;
+}
+
+.modal-content-box {
+    border-radius: 12px;
+    border: 1px solid #E8EAED;
+    padding: 10px 12px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+/* hàng like trong modal */
+.modal-like-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.btn-like {
+    padding-inline: 20px;
+}
+
+.modal-like-info {
+    font-size: 13px;
+    color: #5F6368;
+}
+
+/* bình luận */
+.modal-comments h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.comment-list {
+    list-style: none;
+    margin: 0 0 8px 0;
+    padding-left: 0;
+    max-height: 160px;
+    overflow-y: auto;
+}
+
+.comment-item {
+    font-size: 13px;
+    border-bottom: 1px solid #E8EAED;
+    padding: 4px 0;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 4px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #DADCE0;
+    padding: 8px 10px;
+    font-size: 14px;
+}
+
+.btn-send {
+    align-self: flex-end;
+    padding: 8px 18px;
+    font-size: 13px;
+}
+
+.comment-note {
+    font-size: 12px;
+    color: #80868B;
+}

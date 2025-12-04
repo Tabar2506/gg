@@ -1,0 +1,270 @@
+body { 
+    font-family: Arial, sans-serif;
+    background: #1E1F20;
+    color: #C4C1C5;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1100px;
+    height: 400px; 
+    margin: 80px auto;
+    background: #0E0E0E; 
+    padding: 20px;
+    border-radius: 20px; 
+    box-shadow: 0 3px 8px rgba(188, 87, 87, 0.1);
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+    padding: 24px 28px 0;
+}
+.card-body {
+    display: flex;
+    flex-direction: row;
+}
+img.logo {
+    display: block;
+    margin: 0;
+    width: 60px;
+    height: auto;
+}
+.title-block { 
+    padding: 10px;
+    width: 70%;
+}
+form {
+    display: flex;
+    width: 100%;
+    padding: 12px 28px 24px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+label {
+    display: block;
+    width: 70%;
+    margin-bottom: 6px;     
+    font-weight: bold;
+    text-align: left;
+}
+input[type="email"], input[type="password"], input[type="text"] { 
+    display: block;
+    width: 70%; 
+    height: 50px;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #0E0E0E; 
+    color: #C4C1C5;
+    margin-bottom: 14px; 
+    border: 0.5px solid #C4C1C5; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+}
+button { 
+    width: 100px; 
+    padding: 10px;
+    margin-top: 10px;  
+    background: #A8C7FA; 
+    color: #062E6F; 
+    border: none; 
+    border-radius: 30px; 
+    font-size: 15px;
+    font-weight: 545;
+    cursor: pointer;
+}
+button:hover { 
+    background: #c1d9ff;
+}
+#registerBtn {
+    background: #0E0E0E;
+    color: #8BA5CF;
+    margin: -47px 120px 0 0;
+}
+.error-message {
+    color: #ff6e6e;
+    background-color: #0E0E0E;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 14px;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 70%;
+    box-sizing: border-box;
+    text-align: left;
+}
+.error-message.show {
+    display: flex;
+}
+body { 
+    font-family: Arial, sans-serif;
+    background: #1E1F20;
+    color: #C4C1C5;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+}
+body.light-mode {
+    background: #F5F5F5;
+    color: #333333;
+}
+.container {
+    width: 1100px;
+    height: 400px; 
+    margin: 80px auto;
+    background: #0E0E0E; 
+    padding: 20px;
+    border-radius: 20px; 
+    box-shadow: 0 3px 8px rgba(188, 87, 87, 0.1);
+    transition: background 0.5s;
+}
+body.light-mode .container {
+    background: #FFFFFF;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 14px;
+    padding: 24px 28px 0;
+}
+.card-body {
+    display: flex;
+    flex-direction: row;
+}
+img.logo {
+    display: block;
+    margin: 0;
+    width: 60px;
+    height: auto;
+}
+.title-block { 
+    padding: 10px;
+    width: 70%;
+}
+.theme-toggle {
+    width: auto;
+    padding: 8px 16px;
+    margin-top: 10px;
+    background: #A8C7FA;
+    color: #062E6F;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+.theme-toggle:hover {
+    background: #c1d9ff;
+}
+body.light-mode .theme-toggle {
+    background: #1976D2;
+    color: #FFFFFF;
+}
+body.light-mode .theme-toggle:hover {
+    background: #1565C0;
+}
+form {
+    display: flex;
+    width: 100%;
+    padding: 12px 28px 24px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+label {
+    display: block;
+    width: 70%;
+    margin-bottom: 6px;     
+    font-weight: bold;
+    text-align: left;
+}
+body.light-mode label {
+    color: #333333;
+}
+input[type="email"], input[type="password"], input[type="text"] { 
+    display: block;
+    width: 70%; 
+    height: 50px;
+    padding: 8px;
+    font-size: 16px;
+    background-color: #0E0E0E; 
+    color: #C4C1C5;
+    margin-bottom: 14px; 
+    border: 0.5px solid #C4C1C5; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.5s, border 0.5s;
+}
+body.light-mode input[type="email"], 
+body.light-mode input[type="password"], 
+body.light-mode input[type="text"] {
+    background-color: #F5F5F5;
+    color: #333333;
+    border: 1px solid #CCCCCC;
+}
+button { 
+    width: 100px; 
+    padding: 10px;
+    margin-top: 10px;  
+    background: #A8C7FA; 
+    color: #062E6F; 
+    border: none; 
+    border-radius: 30px; 
+    font-size: 15px;
+    font-weight: 545;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+button:hover { 
+    background: #c1d9ff;
+}
+body.light-mode button {
+    background: #1976D2;
+    color: #FFFFFF;
+}
+body.light-mode button:hover {
+    background: #1565C0;
+}
+#registerBtn {
+    background: #0E0E0E;
+    color: #8BA5CF;
+    margin: -47px 120px 0 0;
+}
+body.light-mode #registerBtn {
+    background: #FFFFFF;
+    color: #1976D2;
+    border: 1px solid #1976D2;
+}
+body.light-mode #registerBtn:hover {
+    background: #F5F5F5;
+}
+.error-message {
+    color: #ff6e6e;
+    background-color: #0E0E0E;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 14px;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 70%;
+    box-sizing: border-box;
+    text-align: left;
+    transition: background-color 0.5s, color 0.5s;
+}
+body.light-mode .error-message {
+    color: #d32f2f;
+    background-color: #FFEBEE;
+    border: 1px solid #FFCDD2;
+}
+.error-message.show {
+    display: flex;
+}
