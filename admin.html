@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang quản trị</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="khungquantri">
+        <!-- Phần đầu trang -->
+        <div class="dauquantri">
+            <h1>Trang quản trị</h1>
+            <div class="hanhdongdautrang">
+                <a href="admin_stats.html" id="xemthongke">Xem thống kê</a>
+                <button id="nutdangxuat" class="nutdangxuat">Đăng xuất</button>
+            </div>
+        </div>
+
+        <!-- Nội dung chính -->
+        <div class="noidungquantri">
+            <p class="loichao">Xin chào, <span id="tenadmin">admin</span>!</p>
+
+            <div class="khungchinh">
+                <!-- Thêm tài khoản mới -->
+                <div class="thequantri">
+                    <h2>Tạo tài khoản mới</h2>
+                    <form id="formtaotaikhoan">
+                        <label for="tendangnhapmoi">Tên đăng nhập</label>
+                        <input type="text" id="tendangnhapmoi" placeholder="Nhập tên đăng nhập">
+
+                        <label for="matkhaumoi">Mật khẩu</label>
+                        <input type="password" id="matkhaumoi" placeholder="Nhập mật khẩu">
+
+                        <label for="vaitro">Vai trò</label>
+                        <select id="vaitro">
+                            <option value="user">User</option>
+                            <option value="admin">Admin</option>
+                        </select>
+
+                        <button type="submit" class="nutchinh">Tạo tài khoản</button>
+
+                        <!-- Thông báo tạo tài khoản thành công -->
+                        <div class="thongbaothanhcong" id="thongbaothem" style="display:none;">
+                            Tạo tài khoản thành công!
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Danh sách tài khoản -->
+                <div class="thequantri">
+                    <h2>Danh sách tài khoản</h2>
+
+                    <table id="bangtaikhoan">
+                        <thead>
+                            <tr>
+                                <th>Tên đăng nhập</th>
+                                <th>Vai trò</th>
+                                <th>Ngày tạo</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody id="danhsachtaikhoan">
+                            <!-- Dữ liệu người dùng sẽ được JS đổ vào đây -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS xử lý trang quản trị (sẽ Việt hóa tiếp ở bước sau) -->
+    <script src="admin.js"></script>
+</body>
+</html>

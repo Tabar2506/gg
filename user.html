@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trung tâm nội dung</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+<div class="trang">
+    <div class="hoptrang">
+
+        <!-- PHẦN ĐẦU TRANG -->
+        <header class="dautrang">
+            <div>
+                <h1 class="tieudetrang">Trung tâm nội dung</h1>
+                <p class="phude">
+                    Xin chào, <span id="tennguoidung">user</span>!
+                </p>
+            </div>
+
+            <div class="hanhdongdautrang">
+                <a href="user_stats.html" class="nut nutlink">Thống kê của tôi</a>
+                <button id="nutdangxuat" class="nut nutnguyhiem">Đăng xuất</button>
+            </div>
+        </header>
+
+        <!-- KHỐI NỘI DUNG CHÍNH -->
+        <div class="khungnoidung">
+            <div class="bochucot">
+
+                <!-- CỘT TRÁI: FORM THÊM / SỬA NỘI DUNG -->
+                <section class="the">
+                    <h2 class="tieudethe">Thêm / sửa nội dung</h2>
+
+                    <!-- Mã bài viết (ẩn) -->
+                    <input type="hidden" id="mabaiviet">
+
+                    <div class="nhomform">
+                        <label for="tieude">Tiêu đề</label>
+                        <input type="text" id="tieude" placeholder="Nhập tiêu đề bài viết">
+                    </div>
+
+                    <div class="nhomform">
+                        <label for="chude">Chủ đề</label>
+                        <input type="text" id="chude" placeholder="Nhập chủ đề">
+                    </div>
+
+                    <div class="nhomform">
+                        <label for="motangan">Mô tả ngắn</label>
+                        <input type="text" id="motangan" placeholder="Nhập mô tả ngắn">
+                    </div>
+
+                    <div class="nhomform">
+                        <label for="quyenhienthi">Quyền hiển thị</label>
+                        <select id="quyenhienthi">
+                            <option value="public">Công khai</option>
+                            <option value="private">Riêng tư</option>
+                        </select>
+                    </div>
+
+                    <div class="nhomform">
+                        <label for="noidung">Nội dung chi tiết</label>
+                        <textarea id="noidung" rows="5" placeholder="Nhập nội dung"></textarea>
+                    </div>
+
+                    <div class="hangnut">
+                        <button id="nutluu" class="nut nutchinh">Lưu nội dung</button>
+                        <button id="nutlailai" class="nut nutphu">Làm mới</button>
+                    </div>
+                </section>
+
+                <!-- CỘT PHẢI: DANH SÁCH & CHI TIẾT BÀI VIẾT -->
+                <section class="cotphai">
+
+                    <!-- DANH SÁCH BÀI VIẾT -->
+                    <div class="the">
+                        <h2 class="tieudethe">Danh sách bài viết</h2>
+                        <p id="thongbaorong" class="ghichu">
+                            Chưa có bài viết nào. Hãy thêm bài mới ở khung bên trái.
+                        </p>
+
+                        <div id="danhsachbaiviet" class="danhsachbaiviet">
+                            <!-- Các bài viết sẽ được JS thêm vào đây -->
+                        </div>
+                    </div>
+
+                    <!-- CHI TIẾT BÀI VIẾT -->
+                    <div class="the thechitiet">
+                        <h2 class="tieudethe">Chi tiết nội dung</h2>
+                        <div id="hopchitiet" class="hopchitiet">
+                            <p class="ghichu">Chọn một bài viết ở danh sách để xem chi tiết, like và bình luận.</p>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="user.js"></script>
+</body>
+</html>

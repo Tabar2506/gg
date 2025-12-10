@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thống kê nội dung của tôi</title>
+    <link rel="stylesheet" href="user_stats.css">
+</head>
+<body>
+<div class="trang">
+    <div class="hoptrang">
+
+        <!-- PHẦN ĐẦU TRANG -->
+        <header class="dautrang">
+            <div>
+                <h1 class="tieudetrang">Thống kê nội dung của tôi</h1>
+                <p class="phude">
+                    Xin chào, <span id="tennguoidung">user</span>!
+                </p>
+            </div>
+
+            <div class="hanhdongdautrang">
+                <a href="user.html" class="nut nutlink">Trang nội dung</a>
+                <button id="nutdangxuat" class="nut nutnguyhiem">Đăng xuất</button>
+            </div>
+        </header>
+
+        <!-- CÁC Ô THỐNG KÊ CHÍNH -->
+        <div class="the">
+            <div class="hangthongke">
+
+                <div class="thethongke">
+                    <h2>Tổng nội dung của tôi</h2>
+                    <p class="sothongke" id="tongbaicuatoi">0</p>
+                    <p class="motathongke">Tổng số bài viết mà tôi đã tạo</p>
+                </div>
+
+                <div class="thethongke">
+                    <h2>Bài công khai</h2>
+                    <p class="sothongke" id="baicongkhaicuatoi">0</p>
+                    <p class="motathongke">Số bài đặt chế độ công khai</p>
+                </div>
+
+                <div class="thethongke">
+                    <h2>Bài riêng tư</h2>
+                    <p class="sothongke" id="bairiengtucuatoi">0</p>
+                    <p class="motathongke">Số bài chỉ mình tôi xem được</p>
+                </div>
+
+                <div class="thethongke">
+                    <h2>Lượt thích nhận được</h2>
+                    <p class="sothongke" id="tongluotthich">0</p>
+                    <p class="motathongke">Tổng số lượt like trên các bài của tôi</p>
+                </div>
+
+                <div class="thethongke">
+                    <h2>Bình luận nhận được</h2>
+                    <p class="sothongke" id="tongbinhluan">0</p>
+                    <p class="motathongke">Tổng số bình luận trên các bài của tôi</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- THỐNG KÊ THEO CHỦ ĐỀ -->
+        <div class="the thechude">
+            <h2>Thống kê theo chủ đề</h2>
+            <ul id="danhsachchude" class="danhsachchude">
+                <!-- JS sẽ đổ danh sách chủ đề vào đây -->
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<script src="user_stats.js"></script>
+</body>
+</html>

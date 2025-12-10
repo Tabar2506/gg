@@ -1,0 +1,168 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   NỀN & FONT
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    background: #F1F3F4;   /* nền xám nhạt */
+    color: #202124;
+}
+
+/* =========================
+   BỐ CỤC CHUNG
+========================= */
+.trang {
+    min-height: 100vh;
+}
+
+.hoptrang {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* =========================
+   PHẦN ĐẦU TRANG
+========================= */
+.dautrang {
+    background: #FFFFFF;
+    padding: 20px 26px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.tieudetrang {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.phude {
+    font-size: 14px;
+    color: #5F6368;
+    margin-top: 4px;
+}
+
+/* Nhóm nút bên phải header */
+.hanhdongdautrang {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* =========================
+   NÚT
+========================= */
+.nut {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Nút dạng link (Trang nội dung) */
+.nutlink {
+    background: #FFFFFF;
+    border: 1px solid #1A73E8;
+    color: #1A73E8;
+}
+
+/* Nút Đăng xuất */
+.nutnguyhiem {
+    background: #EA4335;
+    color: #FFFFFF;
+}
+
+.nutnguyhiem:hover {
+    background: #CC372B;
+}
+
+/* =========================
+   KHỐI THỐNG KÊ CHÍNH
+========================= */
+.the {
+    background: #FFFFFF;
+    padding: 20px 22px;
+    border-radius: 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+/* Hàng chứa các ô thống kê */
+.hangthongke {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+/* Mỗi ô thống kê */
+.thethongke {
+    flex: 1 1 220px;
+    background: #FFFFFF;
+    padding: 20px 22px;
+    border-radius: 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Tiêu đề mỗi ô */
+.thethongke h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Số lớn */
+.sothongke {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+/* Mô tả nhỏ dưới số */
+.motathongke {
+    font-size: 13px;
+    color: #5F6368;
+}
+
+/* =========================
+   THỐNG KÊ THEO CHỦ ĐỀ
+========================= */
+.thechude h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.danhsachchude {
+    list-style: none;
+    margin-top: 6px;
+}
+
+.danhsachchude li {
+    padding: 6px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.danhsachchude li:last-child {
+    border-bottom: none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+    .hangthongke {
+        flex-direction: column;
+    }
+}
