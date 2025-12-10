@@ -415,7 +415,7 @@ function guiBinhLuan() {
 
 function dangXuat() {
     localStorage.removeItem("nguoidunghientai");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
 }
 
 /************** KHỞI TẠO TRANG **************/
@@ -446,3 +446,4 @@ window.onload = function () {
     // Vẽ danh sách lần đầu
     veDanhSachNoiDung();
 };
+
