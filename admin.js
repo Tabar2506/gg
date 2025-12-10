@@ -25,7 +25,7 @@ function kiemTraQuyenAdmin() {
 
     if (!ten || !ds[ten] || ds[ten].vaitro !== "admin") {
         alert("Bạn không có quyền truy cập trang ADMIN!");
-        window.location.href = "login.html";
+        window.location.href = "indexindex.html";
     }
 }
 /************** HIỂN THỊ DANH SÁCH TÀI KHOẢN **************/
@@ -196,4 +196,5 @@ window.onload = function () {
     // Lần đầu vẽ bảng
     veBangTaiKhoan();
 };
+
 
