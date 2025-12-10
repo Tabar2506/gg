@@ -1,0 +1,47 @@
+<!--Alololo-->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm cuối kỳ</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Trang đăng nhập/đăng ký -->
+    <div class="trang">
+        <div class="hoptrang">
+            <!-- Khung login / register -->
+            <div class="the">
+                <img class="anhlogo" src="chrome.png" alt="Logo">
+
+                <h2 class="tieudethe">Đăng nhập</h2>
+
+                <!-- form login -->
+                <form id="formdangnhap">
+                    <div class="nhomform">
+                        <label for="tendangnhap">Tên đăng nhập</label>
+                        <input type="text" id="tendangnhap" placeholder="Nhập tên đăng nhập">
+                    </div>
+
+                    <div class="nhomform">
+                        <label for="matkhaudangnhap">Mật khẩu</label>
+                        <input type="password" id="matkhaudangnhap" placeholder="Nhập mật khẩu">
+                    </div>
+                    <p id="tbDangKy" class="tb-dangky"></p>
+                    <div class="hangnut">
+                        <button type="submit" class="nut nutchinh">Đăng nhập</button>
+
+                        <!-- nút đăng ký nhanh 1 user -->
+                        <button type="button" id="nutdangky" class="nut nutphu">
+                            Đăng ký tài khoản 
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
