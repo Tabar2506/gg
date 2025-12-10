@@ -26,7 +26,7 @@ function kiemTraQuyenAdmin() {
 
     if (!ten || !ds[ten] || ds[ten].vaitro !== "admin") {
         alert("Bạn không có quyền xem thống kê ADMIN!");
-        window.location.href = "login.html";
+        window.location.href = "index.html";
     }
 }
 /************** VẼ THỐNG KÊ DÀNH CHO ADMIN **************/
@@ -100,4 +100,5 @@ window.onload = function () {
     // Vẽ thống kê
     veThongKeAdmin();
 };
+
 
